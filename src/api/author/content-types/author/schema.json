@@ -19,16 +19,39 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
-    },
-    "email": {
-      "type": "string"
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
+    },
+    "experiences": {
+      "displayName": "experiences",
+      "type": "component",
+      "repeatable": true,
+      "component": "experiences.experiences"
+    },
+    "title": {
+      "type": "enumeration",
+      "enum": [
+        "a首席律師",
+        "b合夥律師",
+        "c資深律師",
+        "d律師",
+        "e實習律師"
+      ]
+    },
+    "fields": {
+      "displayName": "fields",
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.fields"
     }
   }
 }

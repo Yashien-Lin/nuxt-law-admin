@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_experiences_experiences",
+  "info": {
+    "displayName": "experiences",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
