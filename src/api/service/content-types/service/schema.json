@@ -4,14 +4,16 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "service": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

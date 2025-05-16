@@ -7,7 +7,7 @@ export interface ExperiencesExperiences extends Struct.ComponentSchema {
     displayName: 'experiences';
   };
   attributes: {
-    text: Schema.Attribute.String;
+    text: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
